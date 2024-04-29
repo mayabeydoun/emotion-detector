@@ -10,15 +10,15 @@ This project develops a convolutional neural network (CNN) to recognize and clas
 - Overlays emojis, emotions, and scores in real-time to reflect detected emotions.
 
 ## Instructions 
-- Download the pretrained model [here](youtube.com) or train and save the model with trainAndEval.ipynb
+- Train and save the model with trainAndEval.ipynb
 - Place the model in the same directory as emotion_detector.py
 - Run emotion_detector.py 
 
 ### To start the real-time emotion detection webcam application
-python real_time_detection.py
+python emotion_detector.py
 
 ### To run the emotion detection model on images or videos
-python detect_emotions.py --source path/to/image/or/video
+python emotion_detector.py --source "path/to/image/or/video"
 
 
 ### To exit the application use the 'esc' key

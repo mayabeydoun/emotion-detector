@@ -106,7 +106,7 @@ def overlay_emoji(x, y, emoji, background):
 # command line arguments
 # default is webcam(0) , can also use photo or video with --source
 parser = argparse.ArgumentParser(description="Run the emotion detection model on video or image input.")
-parser.add_argument('--source', default=1, help="Video source, default is webcam (0). Use file path for video/image file.")
+parser.add_argument('--source', default=0, help="Video source, default is webcam (0). Use file path for video/image file.")
 args = parser.parse_args()
 
 # check if the source is a file and if it is an image
@@ -116,7 +116,7 @@ if not str(args.source).isdigit():
     if file_extension in ['.jpg', '.jpeg', '.png', '.bmp']:
         is_image = True
 
-# init video capture or image file
+# init video capture or video file
 if is_image:
     image = cv2.imread(args.source)
     if image is None:

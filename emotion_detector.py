@@ -130,7 +130,7 @@ else:
         exit()
 
 # load the trained model, train and save this model from trainAndEval.ipynb
-model = torch.load('complete_model1.pth', map_location=torch.device('cpu'))
+model = torch.load('complete_model.pth', map_location=torch.device('cpu'))
 model.eval()
 
 # haarcascade for face detection, frontal face 
